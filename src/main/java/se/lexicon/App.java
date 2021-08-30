@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  * Hello world!
  *
@@ -9,6 +11,9 @@ public class App {
     public static void main( String[] args ) {
 
 
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext();
+
+        Employee programmer = context.getBean("Programmer", Employee.class);
 
 
 
@@ -19,6 +24,5 @@ public class App {
 
 
 
-        
     }
 }

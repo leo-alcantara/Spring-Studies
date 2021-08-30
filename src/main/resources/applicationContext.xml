@@ -9,7 +9,9 @@
 
     <!-- Define your beans here -->
 
-    
+    <bean id="Programmer" class="se.lexicon.Programmer"></bean>
+
+
 </beans>
 
 
